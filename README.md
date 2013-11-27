@@ -9,7 +9,7 @@ It's an intelligent replace tool for Vim, current version: 0.01, it's a very bas
 2. In a text file, switch to command mode(colon mode).
 3. Format: `Replace` + `string/character` + `pattern` + `firstline`(optional) + `lastline`(optional).
 4. For example, replace all `e` with `xxx`, then type `Replace e xxx`.
-5. If you want to replace `e` with `xxx` ranging from line 2 to line 23, then type `Replace e xxx 1 23`.
+5. If you want to replace `e` with `xxx` ranging from line 2 to line 23, then type `Replace e xxx 2 23`.
 
 #####New features to be added
 1. Escape characters in patterns and strings.
