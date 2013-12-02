@@ -31,7 +31,6 @@ function Replace(dest, src, ...)
     let starter = 1
     let lnum = starter
     let ender = line("$")
-    echo "starter: " . starter . " ender: " . ender
     while lnum <= ender
       let line = getline(lnum)
       let repl = substitute(line, a:dest, a:src, "g")
@@ -41,7 +40,34 @@ function Replace(dest, src, ...)
   endif
 endfunction
 
-if !exists(":ReplaceAll")
+function Position(target)
+  let starter = 1
+  let lnum = starter
+  let ender = line("$")
+  let line = getline(lnum)
+  let length = strlen(line)
+  while lnum <= ender
+    let cur = 0
+    let line = getline(lnum)
+    while cur <= length
+      let result = match(line, a:target, cur)
+      let target_length = strlen(a:target)
+      if result == -1
+	break
+      endif
+      echohl Title
+      echo "line: " . lnum . ", pos: " . result . " "
+      echohl None
+      let cur = result + 1
+    endwhile
+    let lnum = lnum + 1
+  endwhile
+endfunction
+
+if !exists(":Replace")
   command -nargs=* Replace :call Replace(<f-args>)
 endif
 
+if !exists(":Position")
+  command -nargs=1 Position :call Position(<f-args>)
+endif
