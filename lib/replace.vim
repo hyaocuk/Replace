@@ -46,6 +46,9 @@ function Position(target)
   let ender = line("$")
   let line = getline(lnum)
   let length = strlen(line)
+  echohl Title
+  echo a:target . " in:"
+  echohl None
   while lnum <= ender
     let cur = 0
     let line = getline(lnum)
@@ -56,7 +59,7 @@ function Position(target)
 	break
       endif
       echohl Title
-      echo "line: " . lnum . ", pos: " . result . " "
+      echo "    line: " . lnum . ", pos: " . result . " "
       echohl None
       let cur = result + 1
     endwhile
