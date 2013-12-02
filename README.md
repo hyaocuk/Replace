@@ -11,6 +11,11 @@ It's an intelligent replace tool for Vim, current version: 0.01, it's a very bas
 4. For example, replace all `e` with `xxx`, then type `Replace e xxx`.
 5. If you want to replace `e` with `xxx` ranging from line 2 to line 23, then type `Replace e xxx 2 23`.
 
+######Position
+1. Return all positions of specified pattern.
+2. In command mode, `Position` + `pattern`.
+3. Display like this `pattern in line 3, pos 4`.
+
 #####New features to be added
 1. Escape characters in patterns and strings.
 2. Support for Regular Expressions.
