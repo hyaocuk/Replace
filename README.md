@@ -14,9 +14,9 @@ It's an intelligent replace tool for Vim, current version: 0.01, it's a very bas
 ######Position
 1. Return all positions of specified pattern.
 2. In command mode, `Position` + `pattern`.
-3. Display like this `pattern in:
-line 3, pos 4
-line 5, pos 6`.
+3. Display like this `pattern in:`
+`line 3, pos 4`
+`line 5, pos 6`.
 
 #####New features to be added
 1. Escape characters in patterns and strings.
