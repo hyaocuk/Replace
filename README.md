@@ -16,9 +16,9 @@ It's an intelligent replace tool for Vim, current version: 0.01, it's a very bas
 ######Position
 1. Return all positions of specified pattern.
 2. In command mode, `Position` + `pattern`.
-3. Display like this `pattern in:
-line 3, pos 4
-line 5, pos 6`.
+3. Display like this `pattern in:`
+`line 3, pos 4`
+`line 5, pos 6`.
 
 ######ReplaceFirst
 1. Replace the first string or character of specified range of lines.
