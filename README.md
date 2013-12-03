@@ -8,7 +8,7 @@ It's an intelligent replace tool for Vim, current version: 0.01, it's a very bas
 1. Add `source $PATH_TO_REPLACE/lib/Replace.vim` to `/etc/vimrc`.
 2. In a text file, switch to command mode(colon mode).
 
-#####Replace
+######Replace
 1. Basic replace, `Replace` + `string/character` + `pattern` + `firstline`(optional) + `lastline`(optional).
 2. For example, replace all `e` with `xxx`, then type `Replace e xxx`.
 3. If you want to replace `e` with `xxx` ranging from line 2 to line 23, then type `Replace e xxx 2 23`.
