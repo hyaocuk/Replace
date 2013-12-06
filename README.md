@@ -2,7 +2,7 @@
 
 ---
 
-It's an intelligent replace tool for Vim, current version: 0.01, it's a very basic version, will support regex in later version.
+It's an intelligent replace wrapper for Vim, current version: 0.01, it's a very basic version.
 
 #####How to use?
 1. Add `source $PATH_TO_REPLACE/lib/Replace.vim` to `/etc/vimrc`.
